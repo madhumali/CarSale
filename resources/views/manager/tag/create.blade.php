@@ -1,4 +1,4 @@
-@extends('admin.layouts.app')
+@extends('manager.layouts.app')
 @section('content')
 <!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
@@ -15,7 +15,7 @@
                     <div class="box-header with-border">
                         <h3 class="box-title"></h3>
                     </div>
-                    @include('admin.includes.messages')
+                    @include('manager.includes.messages')
                     <!-- /.box-header -->
                     <!-- form start -->
                     <form role="form" action="{{ route('tag.store')}}" method="post">

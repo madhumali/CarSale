@@ -1,4 +1,4 @@
-@extends('admin.layouts.app')
+@extends('manager.layouts.app')
 @section('headSection')
 <!-- Select2 -->
 <link rel="stylesheet" href="{{ asset('admn/bower_components/select2/dist/css/select2.min.css') }}">
@@ -15,7 +15,7 @@
                     <div class="box-header with-border">
                         <h3 class="box-title">Cars Advertisement Create</h3>
                     </div>
-                    @include('admin.includes.messages')
+                    @include('manager.includes.messages')
                     <!-- /.box-header -->
                     <!-- form start -->
                     <form role="form" action='{{ route('cars.store') }}' method="post" enctype="multipart/form-data">

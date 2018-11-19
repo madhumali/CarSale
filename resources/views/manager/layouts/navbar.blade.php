@@ -2,7 +2,7 @@
     <!-- Logo -->
     <a href="index2.html" class="logo">
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>RPN</b>-Admin</span>
+        <span class="logo-lg"><b>RPN</b>-Manager-Dashboard</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">

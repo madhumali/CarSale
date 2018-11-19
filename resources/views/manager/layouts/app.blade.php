@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    @include('admin.layouts.head')
-    <title>RPNcarsale-Admin Panel</title>
+    @include('manager.layouts.head')
+    <title>RPNcarsale-Manager Panel</title>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
-        @include('admin.layouts.navbar')
-        @include('admin.layouts.sidebar')
+        @include('manager.layouts.navbar')
+        @include('manager.layouts.sidebar')
         @section('content')
             @show
-        @include('admin.layouts.footer')
+        @include('manager.layouts.footer')
     </div>
 </body>
 </html>
