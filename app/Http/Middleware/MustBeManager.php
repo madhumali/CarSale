@@ -3,10 +3,8 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use Auth;
-use App\Http\Middleware\Authenticate;
 
-class MustBeLawyer
+class MustBeManager
 {
     /**
      * Handle an incoming request.
@@ -17,10 +15,10 @@ class MustBeLawyer
      */
     public function handle($request, Closure $next)
     {
-        if($request->user() && $request->user()->isLawyer())
+        if($request->user() && $request->user()->isManager())
         {
             return $next($request);
- 
+
         }else{
             return redirect('/');
         }

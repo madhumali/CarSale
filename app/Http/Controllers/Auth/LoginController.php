@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\Lawyer\LawyerController;
+use App\Http\Controllers\Manager\ManagerController;
 
 
 class LoginController extends Controller
@@ -32,10 +32,11 @@ class LoginController extends Controller
     //protected $redirectTo = '/home';
 
     protected function authenticated(){
+
         if(Auth::User()->isAdmin()){
             return redirect('/admin');
-        }else if(Auth::User()->isLawyer()){
-            return redirect('/lawyer');
+        }else if(Auth::User()->isManager()){
+            return redirect('/manager');
         }else{
             return redirect('/');
         }
