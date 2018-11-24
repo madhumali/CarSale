@@ -8,7 +8,7 @@
             <div class="col-md-12">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>Create News Categories</h1>
+                    <h1>Create Car Category</h1>
                 </section>
                 <!-- general form elements -->
                 <div class="box box-primary">
@@ -23,7 +23,7 @@
                         <div class="box-body">
                             <div class="col-lg-offset-3 col-lg-6">
                                 <div class="form-group">
-                                    <label for="name">Category Title</label>
+                                    <label for="name">Car Category</label>
                                     <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
                                 </div>
                                 <div class="form-group">

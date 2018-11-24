@@ -19,19 +19,19 @@ Route::group(['namespace' => 'Page'],function(){
 
 Route::group(['namespace' => 'Admin' ,'middleware' => ['admin']],function(){
     Route::get('/admin', 'AdminController@index')->name('admin');
-    Route::resource('admin/cars','CarsController');
-    Route::resource('admin/tag','TagController');
-    Route::resource('admin/category','CategoryController');
-    Route::resource('admin/user','UserController');
+    Route::resource('/admin/cars','CarsController');
+    Route::resource('/admin/tag','TagController');
+    Route::resource('/admin/category','CategoryController');
+    Route::resource('/admin/user','UserController');
 });
 
-Route::group(['namespace' => 'Manager' ,'middleware' => ['manager']],function(){
-    Route::get('/manager', 'ManagerController@index')->name('manager');
-    Route::resource('manager/cars','CarsController');
-    Route::resource('manager/tag','TagController');
-    Route::resource('manager/category','CategoryController');
-    Route::resource('manager/user','UserController');
-});
+// Route::group(['namespace' => 'Manager' ,'middleware' => ['manager']],function(){
+//     Route::get('/manager', 'ManagerController@index')->name('manager');
+//     Route::resource('manager/cars','CarsController');
+//     Route::resource('manager/tag','TagController');
+//     Route::resource('manager/category','CategoryController');
+//     Route::resource('manager/user','UserController');
+// });
 
 Auth::routes();
 

@@ -10,7 +10,7 @@
     <!-- Default box -->
     <div class="box">
       <div class="box-header with-border">
-        <h3 class="box-title">Car Advertisement Table</h3>
+        <h3 class="box-title">Car Advertisements</h3>
         <a class="col-md-offset-4 float-right btn btn-success" href="{{ route('cars.create') }}">Add New Advertisement</a>
         <div class="box-tools pull-right">
           <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>

@@ -5,7 +5,7 @@
 <div class="content-wrapper ">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-        <h1>Category Edit</h1>
+        <h1>Car Category Edit</h1>
     </section>
     <div class="box box-primary">
         <div class="box-header with-border">
@@ -20,7 +20,7 @@
             <div class="box-body">
                 <div class="col-lg-offset-3 col-lg-6">
                     <div class="form-group">
-                        <label for="name">Category Title</label>
+                        <label for="name">Car Category</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Tag Title" value="{{$categories->name }}">
                     </div>
                     <div class="form-group">

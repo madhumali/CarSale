@@ -8,7 +8,7 @@
             <div class="col-md-12">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>Create News Tags</h1>
+                    <h1>Create Car Brand</h1>
                 </section>
                 <!-- general form elements -->
                 <div class="box box-primary">
@@ -23,11 +23,11 @@
                         <div class="box-body">
                             <div class="col-lg-offset-3 col-lg-6">
                                 <div class="form-group">
-                                    <label for="name">Tag Title</label>
+                                    <label for="name">Car Brand</label>
                                     <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
                                 </div>
                                 <div class="form-group">
-                                    <label for="slug">Tag Slug</label>
+                                    <label for="slug">Car Brand Slug</label>
                                     <input type="text" class="form-control" name="slug" id="slug" placeholder="Enter Slug">
                                 </div>
                                 <div class="box-footer">

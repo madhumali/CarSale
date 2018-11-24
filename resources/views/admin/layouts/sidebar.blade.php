@@ -35,7 +35,7 @@
             <ul class="treeview-menu">
                 <li><a href="{{ route('cars.index') }}"><i class="fa fa-circle-o"></i>Publish</a></li>
                 <li><a href="{{ route('category.index') }}"><i class="fa fa-circle-o"></i> Categories</a></li>
-                <li><a href="{{ route('tag.index') }}"><i class="fa fa-circle-o"></i>Tags</a></li>
+                <li><a href="{{ route('tag.index') }}"><i class="fa fa-circle-o"></i>Brands</a></li>
             </ul>
         </li>
         <li class="treeview">
@@ -48,8 +48,6 @@
             </a>
             <ul class="treeview-menu">
                 <li><a href="{{ route('user.index') }}"><i class="fa fa-circle-o"></i>Register</a></li>
-                {{-- <li><a href="{{ route('lawcategory.index') }}"><i class="fa fa-circle-o"></i>Roles</a></li>
-                <li><a href="{{ route('lawtag.index') }}"><i class="fa fa-circle-o"></i>Permissions</a></li> --}}
             </ul>
         </li>
     </section>

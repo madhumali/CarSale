@@ -13,7 +13,7 @@
                 <!-- general form elements -->
                 <div class="box box-primary">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Cars Advertisement Create</h3>
+                        <h3 class="box-title">Car Advertisements Create</h3>
                     </div>
                     @include('admin.includes.messages')
                     <!-- /.box-header -->
@@ -50,7 +50,7 @@
                                 </div>  
                                 <br>
                                 <div class="form-group" style="margin-top:18px;">
-                                    <label>Select Advertisement Tags</label>
+                                    <label>Car Brand</label>
                                     <select class="form-control select2 select2-hidden-accessible" multiple="" data-placeholder="Select a State" style="width: 100%;" tabindex="-1" aria-hidden="true" name="tags[]">
                                         @foreach($tags as $tag )
                                             <option value="{{ $tag->id}}">{{ $tag->name }}</option>
@@ -58,7 +58,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group" style="margin-top:18px;">
-                                    <label>Select Advertisement Category</label>
+                                    <label>Car Category</label>
                                     <select class="form-control select2 select2-hidden-accessible" multiple="" data-placeholder="Select a State" style="width: 100%;" tabindex="-1" aria-hidden="true" name="categories[]">
                                             @foreach($categories as $category )
                                             <option value="{{ $category->id}}">{{ $category->name }}</option>
