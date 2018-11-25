@@ -35,8 +35,6 @@ class LoginController extends Controller
 
         if(Auth::User()->isAdmin()){
             return redirect('/admin');
-        // }else if(Auth::User()->isManager()){
-        //     return redirect('/admin');
         }else{
             return redirect('/');
         }

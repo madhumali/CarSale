@@ -25,9 +25,6 @@ Route::group(['namespace' => 'Admin' ,'middleware' => ['admin']],function(){
     Route::resource('/admin/user','UserController');
 });
 
-// Route::group(['namespace' => 'Admin' ,'middleware' => ['manager']],function(){
-//     Route::get('/admin', 'AdminController@index')->name('admin');
-// });
 
 Auth::routes();
 
