@@ -40,5 +40,13 @@ class PageController extends Controller
         $cars = $categories->cars();
         return view('main.cattags',compact('cars','category','tag'));
     }
+    // edit here
+    public function search()
+    {
+        $category = categories::all();
+        $tag = tags::all();
+        //$cars =;//search here
+        return view('main.search',compact('cars','category','tag'));
+    }
     
 }

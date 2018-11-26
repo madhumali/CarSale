@@ -71,7 +71,7 @@
                         <li><a href="" >Book a Ride</a></li>
                         <li><a href="">New Arrivals</a></li>
                         <li><a href="">Quick Search</a></li>
-                        <li><a href="">Contact Us</a></li>
+                        <li><a href="{{route('contact')}}">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
