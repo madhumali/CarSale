@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <ul class="list-inline">
-                            <li><span><i class="fa fa-envelope-o"></i></span> <a href="#"> rpncarsales@gmail.com</a></li>
+                            <li><span><i class="fa fa-envelope-o"></i></span> <a href="mailto:rpncarsale@gmail.com">rpncarsale@gmail.com</a></li>
                             <li><ul class="list-inline top-social">
                                     <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
