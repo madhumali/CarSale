@@ -14,11 +14,7 @@
                                 <h2 data-animation="animated lightSpeedIn">Best Cars</h2>
                                 <p data-animation="animated lightSpeedIn">Our team always try to serve you better vehicle on your suite..</p>
                                 <div class="ad-btn">
-<<<<<<< HEAD
-                                    <a href="{{route('contact')}}" class="btn btn-primary" data-animation="animated lightSpeedIn">Contact Now</a>
-=======
-                                    <a href="{{ route('contact.index') }}" class="btn btn-primary" data-animation="animated lightSpeedIn">Contact Now</a>
->>>>>>> 40def9b3fd662f6529ae6a6767b8f36b212579ae
+                                    <a href="/contact" class="btn btn-primary" data-animation="animated lightSpeedIn">Contact Now</a>
                                 </div>
                             </div>
                         </div>
@@ -182,11 +178,7 @@
             <div class="call-to-act">
                 <h1><span>Import Your Dream car</span> With RPN Car Sales</h1>
                 <p>Import Of Foreign Cars Become Easier Now: </p>
-<<<<<<< HEAD
-                <a href="{{route('contact')}}" class="btn btn-primary">Contact Now</a>
-=======
-                <a href="{{ route('recent') }}" class="btn btn-primary">Contact Now</a>
->>>>>>> 40def9b3fd662f6529ae6a6767b8f36b212579ae
+                <a href="/conact" class="btn btn-primary">Contact Now</a>
             </div>
         </div>
     </div><!-- #call-to-act -->

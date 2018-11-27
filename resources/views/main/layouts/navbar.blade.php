@@ -69,27 +69,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-<<<<<<< HEAD
                 <a class="navbar-brand" href="/">RPN Car Sale</a>
-=======
-                <a class="navbar-brand" href="{{ route('main') }}"><img class="img-responsive" src="images/icon/rpnlogo.png" alt="RPN Car Sales"></a>
->>>>>>> 40def9b3fd662f6529ae6a6767b8f36b212579ae
             </div><!-- /navbar-header -->
             
             <div class="navbar-right">
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
-<<<<<<< HEAD
                         <li><a href="/testrides" >Test Rides</a></li>
                         <li><a href="">Inventory</a></li>
-                        <li><a href="{{route('contact')}}">Contact Us</a></li>
-=======
-                        <li><a href="{{route('main')}}">Home</a></li>
-                        <li><a href="" >Book a Ride</a></li>
-                        <li><a href="{{route('recent')}}">New Arrivals</a></li>
-                        <li><a href="">Quick Search</a></li>
-                        <li><a href="{{route('contact.index')}}">Contact Us</a></li>
->>>>>>> 40def9b3fd662f6529ae6a6767b8f36b212579ae
+                        <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>

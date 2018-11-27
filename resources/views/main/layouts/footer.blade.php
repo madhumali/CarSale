@@ -13,21 +13,9 @@
                     <div class="footer-widget link-widget">
                         <h3>Useful Links</h3>
                         <ul>
-<<<<<<< HEAD
                             <li><a href="#"> <i class="fa fa-angle-double-right"></i> Testrides</a></li>
                             <li><a href="#"> <i class="fa fa-angle-double-right"></i> Inventory</a></li>
                             <li><a href="#"> <i class="fa fa-angle-double-right"></i> Contact</a></li>
-=======
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Support & Help</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Affiliate Program</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Knowledge Base</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Contact</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> How It Works</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Advertise Policy</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Terms Of Service</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Support</a></li>
->>>>>>> 40def9b3fd662f6529ae6a6767b8f36b212579ae
                         </ul>
                     </div>
                 </div>
@@ -57,7 +45,7 @@
 <script src="{{ asset('main/js/jquery.min.js') }}"></script>
 <script src="{{ asset('main/js/modernizr.min.js') }}"></script>
 <script src="{{ asset('main/js/bootstrap.min.js') }}"></script>
-{{-- <script src="https://maps.google.com/maps/api/js?sensor=true"></script> --}}
+<script src="https://maps.google.com/maps/api/js?sensor=true"></script> 
 <script src="{{ asset('main/js/gmaps.min.js') }}"></script>
 <script src="{{ asset('main/js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('main/js/custom.js') }}"></script>
