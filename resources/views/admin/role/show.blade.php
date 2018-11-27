@@ -10,8 +10,8 @@
     <!-- Default box -->
     <div class="box">
       <div class="box-header with-border">
-        <h3 class="box-title">Employer Details</h3>
-        <a class="col-md-offset-4 float-right btn btn-success" href="{{ route('user.create') }}">Add New</a>
+        <h3 class="box-title">Site Roles</h3>
+        <a class="col-md-offset-4 float-right btn btn-success" href="{{ route('role.create') }}">Add New</a>
         <div class="box-tools pull-right">
           <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
           {{-- <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button> --}}
@@ -24,28 +24,28 @@
               <thead>
                 <tr>
                   <th>S.No</th>
-                  <th>User Name</th>
+                  <th>Role Name</th>
                   <th>Slug</th>
                   <th>Edit</th>
                   <th>Delete</th>
                 </tr>
               </thead>
               <tbody>
-                @foreach($users as $user)
+                @foreach($roles as $role)
                   <tr>
                       <td>{{$loop->index+1}}</td>
-                      <td>{{$user->name}}</td>
-                      <td>{{$user->name}}</td>
-                      <td><a href="{{ route('user.edit',$user->id) }}"><span class="glyphicon glyphicon-edit"></span></a></td>
+                      <td>{{$role->name}}</td>
+                      <td>{{$role->name}}</td>
+                      <td><a href="{{ route('role.edit',$role->id) }}"><span class="glyphicon glyphicon-edit"></span></a></td>
                       <td>
-                          <form method="post"id="delete-form-{{ $user->id }}" action="{{ route('user.destroy',$user->id) }}" style="dispaly: none">
+                          <form method="post"id="delete-form-{{ $role->id }}" action="{{ route('role.destroy',$role->id) }}" style="dispaly: none">
                               {{ csrf_field()}}
                               {{ method_field('DELETE') }}
                           </form>
                           <a href="" onclick=" 
                               if(confirm('Are You Sure,You want to Delete this ?'))
                               {
-                                  event.preventDefault();document.getElementById('delete-form-{{ $user->id }}').submit();
+                                  event.preventDefault();document.getElementById('delete-form-{{ $role->id }}').submit();
                               }
                               else
                               {
@@ -59,7 +59,7 @@
               <tfoot>
                 <tr>
                   <th>S.No</th>
-                  <th>User Name</th>
+                  <th>Role Name</th>
                   <th>Slug</th>
                   <th>Edit</th>
                   <th>Delete</th>

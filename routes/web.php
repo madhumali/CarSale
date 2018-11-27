@@ -24,6 +24,7 @@ Route::group(['namespace' => 'Admin' ,'middleware' => ['admin']],function(){
     Route::resource('/admin/tag','TagController');
     Route::resource('/admin/category','CategoryController');
     Route::resource('/admin/user','UserController');
+    Route::resource('/admin/role','RoleController');
 });
 
 

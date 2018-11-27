@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="{{ asset('main/css/owl.carousel.css') }}">  
 <link rel="stylesheet" href="{{ asset('main/css/main.css') }}">  
 <link rel="stylesheet" href="{{ asset('main/css/responsive.css') }}">
+<link rel="stylesheet" href="{{ asset('css/css.css') }}">
 
 <!-- CSRF Token -->
 <meta name="csrf-token" content="{{ csrf_token() }}">
