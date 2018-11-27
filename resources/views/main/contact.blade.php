@@ -74,12 +74,12 @@
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <textarea name="message" id="message" required="required" class="form-control" rows="10" placeholder="Enter your text"></textarea>
+                                    <textarea name="message" id="message" name="message" required="required" class="form-control" rows="10" placeholder="Enter your text"></textarea>
                                 </div>             
                             </div>     
                         </div>
                         <div class="form-group text-center">
-                            <button type="submit" class="btn btn-primary">Submit Message</button>
+                            <button type="submit" name="submit" class="btn btn-primary" value="Save">Submit Message</button>
                         </div>
                     </form><!-- contact form -->  
                 </div> 
