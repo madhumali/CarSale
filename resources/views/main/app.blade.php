@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         @include('main/layouts/head')
     </head>
     <body>

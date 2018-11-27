@@ -25,7 +25,7 @@
                                         @endif
                                     </li> --}}
                                     <li>
-                                        <a href="{{ route('login') }}" class="fa fa-sign-in btn btn-primary" aria-hidden="true">{{ __('Login') }}</a>
+                                        <a href="{{ route('login') }}" class=" btn btn-primary" aria-hidden="true">{{ __('Login') }}</a>
                                     </li>
                                 @else
                                     <li class="nav-item dropdown">
@@ -61,16 +61,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img class="img-responsive" src="images/logo.png" alt="RPN Car Sales"></a>
+                <a class="navbar-brand" href="/">RPN Car Sale</a>
             </div><!-- /navbar-header -->
             
             <div class="navbar-right">
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="{{route('main')}}">Home</a></li>
-                        <li><a href="" >Book a Ride</a></li>
-                        <li><a href="">New Arrivals</a></li>
-                        <li><a href="">Quick Search</a></li>
+                        <li><a href="/testrides" >Test Rides</a></li>
+                        <li><a href="">Inventory</a></li>
                         <li><a href="{{route('contact')}}">Contact Us</a></li>
                     </ul>
                 </div>
