@@ -14,15 +14,15 @@
                     <div class="footer-widget link-widget">
                         <h3>Useful Links</h3>
                         <ul>
-                            <li><a href="#"> <i class="fa fa-angle-double-right"></i> Support & Help</a></li>
-                            <li><a href="#"> <i class="fa fa-angle-double-right"></i> Affiliate Program</a></li>
-                            <li><a href="#"> <i class="fa fa-angle-double-right"></i> Knowledge Base</a></li>
-                            <li><a href="#"> <i class="fa fa-angle-double-right"></i> Contact</a></li>
-                            <li><a href="#"> <i class="fa fa-angle-double-right"></i> How It Works</a></li>
-                            <li><a href="#"> <i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
-                            <li><a href="#"> <i class="fa fa-angle-double-right"></i> Advertise Policy</a></li>
-                            <li><a href="#"> <i class="fa fa-angle-double-right"></i> Terms Of Service</a></li>
-                            <li><a href="#"> <i class="fa fa-angle-double-right"></i> Support</a></li>
+                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Support & Help</a></li>
+                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Affiliate Program</a></li>
+                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Knowledge Base</a></li>
+                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Contact</a></li>
+                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> How It Works</a></li>
+                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
+                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Advertise Policy</a></li>
+                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Terms Of Service</a></li>
+                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Support</a></li>
                         </ul>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                     <div class="footer-widget contact-widget">
                         <h3>Contact Us</h3>
                         <ul>
-                             <li><span><i class="fa fa-envelope"></i> E-mail :</span> <a href="mailto:#">rpncarsales@gmail.com</a></li>
+                             <li><span><i class="fa fa-envelope"></i> E-mail :</span> <a href="mailto:rpncarsale@gmail.com">rpncarsale@gmail.com</a></li>
                              <li>
                                  <ul class="list-inline social">
                                     <li><a class="facebook" href="#"><i class="fa fa-facebook-square"></i></a></li>

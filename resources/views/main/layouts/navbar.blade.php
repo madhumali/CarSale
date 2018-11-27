@@ -69,7 +69,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img class="img-responsive" src="images/logo.png" alt="RPN Car Sales"></a>
+                <a class="navbar-brand" href="{{ route('main') }}"><img class="img-responsive" src="images/icon/rpnlogo.png" alt="RPN Car Sales"></a>
             </div><!-- /navbar-header -->
             
             <div class="navbar-right">
