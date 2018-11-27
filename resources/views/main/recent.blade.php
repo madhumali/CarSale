@@ -5,7 +5,7 @@
     <div id="breadcrumb-section" class="section">
         <div class="container">
             <div class="page-title text-center">
-                {{-- <h1>All Categories</h1> --}}
+                <h1>Recent Arrivals</h1>
             </div>
         </div>
     </div><!-- breadcrumb-section -->

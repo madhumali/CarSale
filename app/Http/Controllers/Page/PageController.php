@@ -40,6 +40,15 @@ class PageController extends Controller
         $cars = $categories->cars();
         return view('main.cattags',compact('cars','category','tag'));
     }
+
+    public function recent()
+    {
+        $category = categories::all();
+        $tag = tags::all();
+        $cars = cars::orderBy('updated_at','desc')->limit(8)->get();
+        return view('main.recent',compact('cars','category','tag'));
+    }
+
     // edit here
     public function search()
     {

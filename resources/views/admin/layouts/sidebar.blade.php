@@ -41,13 +41,38 @@
         <li class="treeview">
             <a href="#">
             <i class="fa fa-user"></i>
-            <span>User</span>
+            <span>Employees</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
             </span>
             </a>
             <ul class="treeview-menu">
-                <li><a href="{{ route('user.index') }}"><i class="fa fa-circle-o"></i>Register</a></li>
+                <li><a href="{{ route('user.index') }}"><i class="fa fa-circle-o"></i>Users</a></li>
+                <li><a href="{{ route('user.create') }}"><i class="fa fa-circle-o"></i>Employee Register</a></li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a href="#">
+            <i class="fa fa-user"></i>
+            <span>Permission</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="{{ route('permission.index') }}"><i class="fa fa-circle-o"></i>Permission</a></li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a href="#">
+            <i class="fa fa-user"></i>
+            <span>Messages</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="{{ route('message.index') }}"><i class="fa fa-circle-o"></i>Show</a></li>
             </ul>
         </li>
     </section>

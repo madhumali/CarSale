@@ -15,7 +15,8 @@ Route::group(['namespace' => 'Page'],function(){
     Route::get('cars/{cars?}','PageController@cars')->name('cars');
     Route::get('cars/tags/{tags}','PageController@tag')->name('tags');
     Route::get('cars/categories/{categories}','PageController@category')->name('categories');
-    Route::get('/contact','ContactController@index')->name('contact');
+    Route::resource('/contact','ContactController');
+    Route::get('/recent','PageController@recent')->name('recent');
 });
 
 Route::group(['namespace' => 'Admin' ,'middleware' => ['admin']],function(){
@@ -23,7 +24,11 @@ Route::group(['namespace' => 'Admin' ,'middleware' => ['admin']],function(){
     Route::resource('/admin/cars','CarsController');
     Route::resource('/admin/tag','TagController');
     Route::resource('/admin/category','CategoryController');
+    Route::resource('/admin/message','MessageController');
+    //
     Route::resource('/admin/user','UserController');
+    Route::resource('/admin/role','RoleController');
+    Route::resource('/admin/permission','PermissionController');
 });
 
 

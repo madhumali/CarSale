@@ -1,21 +1,22 @@
 <?php
 
-namespace App\Http\Controllers\Page;
+namespace App\Http\Controllers\Admin;
 
-use App\Model\User\contact;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\Admin\role;
 
-class ContactController extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()//kushan
+    public function index()
     {
-        return view('main.contact');
+        $roles = role::all();
+        return view('admin.role.show',compact('roles'));
     }
 
     /**
@@ -25,7 +26,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        
+        return view('admin.role.create');
     }
 
     /**
@@ -36,23 +37,22 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        $contactnew = new contact;
-        $contactnew -> name = $request -> name;
-        $contactnew -> email = $request -> email;
-        $contactnew -> subject = $request -> subject;
-        $contactnew -> message = $request -> message;
-        $contactnew -> save();
-        
-        return redirect()->back()->withSuccess('IT WORKS!');
+        $this->validate($request,[
+            'name' => 'required|max:50|unique:roles'
+        ]);
+        $role = new role;
+        $role->name = $request->name;
+        $role->save();
+        return redirect(route('role.index'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Model\User\contact  $contact
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(contact $contact)
+    public function show($id)
     {
         //
     }
@@ -60,34 +60,42 @@ class ContactController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Model\User\contact  $contact
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(contact $contact)
+    public function edit($id)
     {
-        //
+        $role = role::find($id);
+        return view('admin.role.edit',compact('role'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Model\User\contact  $contact
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, contact $contact)
+    public function update(Request $request, $id)
     {
-        //
+        $this->validate($request,[
+            'name' => 'required|max:50'
+        ]);
+        $role = role::find($id);
+        $role->name = $request->name;
+        $role->save();
+        return redirect(route('role.index'));
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Model\User\contact  $contact
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(contact $contact)
+    public function destroy($id)
     {
-        //
+        role::where('id',$id)->delete();
+        return redirect()->back();
     }
 }

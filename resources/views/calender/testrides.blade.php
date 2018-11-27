@@ -107,7 +107,7 @@
                             <ul class="nav navbar-nav">
                                 <li><a href="/testrides" >Test Rides</a></li>
                                 <li><a href="">Inventory</a></li>
-                                <li><a href="{{route('contact')}}">Contact Us</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-xs-3 col-sm-3 col-md-3">
                                 <div class="form-group">
                                     {!! Form::label('email', 'EMail:') !!}

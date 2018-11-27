@@ -14,7 +14,11 @@
                                 <h2 data-animation="animated lightSpeedIn">Best Cars</h2>
                                 <p data-animation="animated lightSpeedIn">Our team always try to serve you better vehicle on your suite..</p>
                                 <div class="ad-btn">
+<<<<<<< HEAD
                                     <a href="{{route('contact')}}" class="btn btn-primary" data-animation="animated lightSpeedIn">Contact Now</a>
+=======
+                                    <a href="{{ route('contact.index') }}" class="btn btn-primary" data-animation="animated lightSpeedIn">Contact Now</a>
+>>>>>>> 40def9b3fd662f6529ae6a6767b8f36b212579ae
                                 </div>
                             </div>
                         </div>
@@ -27,8 +31,16 @@
                     <div class="row">
                         <div class="col-md-9">
                             <div class="slider-content">
+<<<<<<< HEAD
                                 <h2 style="color:seagreen" data-animation="animated lightSpeedIn">Get the TruePrice</h2>
                                 <p style="color:seagreen" data-animation="animated lightSpeedIn">Pay Actual Price You Will Pay at the Dealership</p>
+=======
+                                <h2 data-animation="animated lightSpeedIn">Get the TruePrice</h2>
+                                <p data-animation="animated lightSpeedIn">Pay Actual Price You Will Pay at the Dealership</p>
+                                <div class="ad-btn">
+                                    <a href="{{ route('recent') }}" class="btn btn-primary" data-animation="animated lightSpeedIn">Refer Now</a>
+                                </div>
+>>>>>>> 40def9b3fd662f6529ae6a6767b8f36b212579ae
                             </div>
                         </div>
                     </div><!-- row -->
@@ -41,7 +53,13 @@
                             <div class="slider-content">
                                 <h2 data-animation="animated lightSpeedIn">Excellent Service</h2>
                                 <p data-animation="animated lightSpeedIn">Customer satisfaction is our main responsibility.....</p>
+<<<<<<< HEAD
                                 
+=======
+                                <div class="ad-btn" >
+                                    <a href="{{ route('recent') }}" class="btn btn-primary" data-animation="animated lightSpeedIn">View Ads</a>
+                                </div>
+>>>>>>> 40def9b3fd662f6529ae6a6767b8f36b212579ae
                             </div>
                         </div>
                     </div><!-- row -->
@@ -164,7 +182,11 @@
             <div class="call-to-act">
                 <h1><span>Import Your Dream car</span> With RPN Car Sales</h1>
                 <p>Import Of Foreign Cars Become Easier Now: </p>
+<<<<<<< HEAD
                 <a href="{{route('contact')}}" class="btn btn-primary">Contact Now</a>
+=======
+                <a href="{{ route('recent') }}" class="btn btn-primary">Contact Now</a>
+>>>>>>> 40def9b3fd662f6529ae6a6767b8f36b212579ae
             </div>
         </div>
     </div><!-- #call-to-act -->
@@ -187,8 +209,8 @@
                     </div>
                     <div class="category-tab">
                         <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#recent" aria-controls="recent" role="tab" data-toggle="tab">Recent</a></li>
-                            <li role="presentation"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab">Popular</a></li>
+                            {{-- <li role="presentation" class="active"><a href="#recent" aria-controls="recent" role="tab" data-toggle="tab">Recent</a></li>
+                            <li role="presentation"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab">Popular</a></li> --}}
                         </ul>
                         <div class="tab-content list-view-tab">
                             <div role="tabpanel" class="tab-pane active" id="popular">

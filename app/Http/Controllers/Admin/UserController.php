@@ -4,6 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\Admin\role;
+use App\User;
+use Auth;
+// use App\Http\Controllers\Admin\Users;
 
 class UserController extends Controller
 {
@@ -14,8 +18,15 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('admin.user.show');
+        $users = User::where('id', '!=', Auth::id())->where(function ($q) {
+            return $q->where('role', 'admin');
+        })->get();
+        return view('admin.user.show',compact('users'));
     }
+
+    // $users = User::where('id', '!=', Auth::id())->get()->where(function ($q) {
+    //     return $q->where('role', 'admin');
+    // });
 
     /**
      * Show the form for creating a new resource.
@@ -24,7 +35,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        $roles = role::all();
+        return view('admin.user.create',compact('roles'));
     }
 
     /**
