@@ -35,3 +35,6 @@ Route::group(['middleware' => ['auth']], function() {
 
 
 });
+
+Route::get('testrides', 'TestrideController@index')->name('testrides.index');
+Route::post('testrides', 'TestrideController@addTestride')->name('testrides.add');
