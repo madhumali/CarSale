@@ -27,16 +27,8 @@
                     <div class="row">
                         <div class="col-md-9">
                             <div class="slider-content">
-<<<<<<< HEAD
                                 <h2 style="color:seagreen" data-animation="animated lightSpeedIn">Get the TruePrice</h2>
                                 <p style="color:seagreen" data-animation="animated lightSpeedIn">Pay Actual Price You Will Pay at the Dealership</p>
-=======
-                                <h2 data-animation="animated lightSpeedIn">Get the TruePrice</h2>
-                                <p data-animation="animated lightSpeedIn">Pay Actual Price You Will Pay at the Dealership</p>
-                                <div class="ad-btn">
-                                    <a href="{{ route('recent') }}" class="btn btn-primary" data-animation="animated lightSpeedIn">Refer Now</a>
-                                </div>
->>>>>>> 40def9b3fd662f6529ae6a6767b8f36b212579ae
                             </div>
                         </div>
                     </div><!-- row -->
@@ -49,13 +41,7 @@
                             <div class="slider-content">
                                 <h2 data-animation="animated lightSpeedIn">Excellent Service</h2>
                                 <p data-animation="animated lightSpeedIn">Customer satisfaction is our main responsibility.....</p>
-<<<<<<< HEAD
                                 
-=======
-                                <div class="ad-btn" >
-                                    <a href="{{ route('recent') }}" class="btn btn-primary" data-animation="animated lightSpeedIn">View Ads</a>
-                                </div>
->>>>>>> 40def9b3fd662f6529ae6a6767b8f36b212579ae
                             </div>
                         </div>
                     </div><!-- row -->
