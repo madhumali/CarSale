@@ -77,9 +77,9 @@
                     <ul class="nav navbar-nav">
                         <li><a href="{{route('main')}}">Home</a></li>
                         <li><a href="" >Book a Ride</a></li>
-                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="{{route('recent')}}">New Arrivals</a></li>
                         <li><a href="">Quick Search</a></li>
-                        <li><a href="{{route('contact')}}">Contact Us</a></li>
+                        <li><a href="{{route('contact.index')}}">Contact Us</a></li>
                     </ul>
                 </div>
             </div>

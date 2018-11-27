@@ -1,21 +1,22 @@
 <?php
 
-namespace App\Http\Controllers\Page;
+namespace App\Http\Controllers\Admin;
 
-use App\Model\User\contact;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\User\contact;
 
-class ContactController extends Controller
+class MessageController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()//kushan
+    public function index()
     {
-        return view('main.contact');
+        $messages = contact::orderBy('updated_at','desc')->get();
+        return view('admin.messages.show',compact('messages'));
     }
 
     /**
@@ -36,23 +37,16 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        $contactnew = new contact;
-        $contactnew -> name = $request -> name;
-        $contactnew -> email = $request -> email;
-        $contactnew -> subject = $request -> subject;
-        $contactnew -> message = $request -> message;
-        $contactnew -> save();
-        
-        return redirect()->back()->withSuccess('IT WORKS!');
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Model\User\contact  $contact
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(contact $contact)
+    public function show($id)
     {
         //
     }
@@ -60,10 +54,10 @@ class ContactController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Model\User\contact  $contact
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(contact $contact)
+    public function edit($id)
     {
         //
     }
@@ -72,10 +66,10 @@ class ContactController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Model\User\contact  $contact
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, contact $contact)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -83,11 +77,12 @@ class ContactController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Model\User\contact  $contact
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(contact $contact)
+    public function destroy($id)
     {
-        //
+        contact::where('id',$id)->delete();
+        return redirect()->back();
     }
 }
