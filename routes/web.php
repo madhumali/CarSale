@@ -15,7 +15,7 @@ Route::group(['namespace' => 'Page'],function(){
     Route::get('cars/{cars?}','PageController@cars')->name('cars');
     Route::get('cars/tags/{tags}','PageController@tag')->name('tags');
     Route::get('cars/categories/{categories}','PageController@category')->name('categories');
-    Route::get('/contact','ContactController@index')->name('contact');
+    Route::resource('contact','ContactController');
 });
 
 Route::group(['namespace' => 'Admin' ,'middleware' => ['admin']],function(){

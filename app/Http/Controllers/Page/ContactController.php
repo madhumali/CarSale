@@ -25,7 +25,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -36,7 +36,14 @@ class ContactController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $contactnew = new contact;
+        $contactnew -> name = $request -> name;
+        $contactnew -> email = $request -> email;
+        $contactnew -> subject = $request -> subject;
+        $contactnew -> message = $request -> message;
+        $contactnew -> save();
+        
+        return redirect()->back()->withSuccess('IT WORKS!');
     }
 
     /**

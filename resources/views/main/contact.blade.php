@@ -19,31 +19,32 @@
                 </div> --}}
                 <div class="contact-form-wrapper">
                     {{-- contact controller eke store function eka balapn --}}
-                    <form id="contact-form" class="contact-form" name="contact-form" method="post" action="">
+                    <form id="contact-form" class="contact-form" name="contact-form" method="POST" action="{{route('contact.store')}}">
+                        @csrf
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" required="required" placeholder="Name">
+                                    <input type="text" id="name" name="name" class="form-control" required="required" placeholder="Name">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" required="required" placeholder="Email Id">
+                                    <input type="email" id="email" name="email" class="form-control" required="required" placeholder="Email Id">
                                 </div> 
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" required="required" placeholder="Subject">
+                                    <input type="text" id="subject" name="subject" class="form-control" required="required" placeholder="Subject">
                                 </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
-                                    <textarea name="message" id="message" required="required" class="form-control" rows="10" placeholder="Enter your text"></textarea>
+                                    <textarea name="message" id="message" name="message" required="required" class="form-control" rows="10" placeholder="Enter your text"></textarea>
                                 </div>             
                             </div>     
                         </div>
                         <div class="form-group text-center">
-                            <button type="submit" class="btn btn-primary">Submit Message</button>
+                            <button type="submit" name="submit" class="btn btn-primary" value="Save">Submit Message</button>
                         </div>
                     </form><!-- contact form -->  
                 </div> 
