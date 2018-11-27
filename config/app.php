@@ -213,6 +213,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         // Image class alises
         'Image' => Intervention\Image\Facades\Image::class,
+        // Default user model
+        'User' => 'App\User',
 
     ],
 
