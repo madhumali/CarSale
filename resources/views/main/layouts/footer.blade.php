@@ -5,31 +5,24 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="footer-widget about-widget">
-                        <h3>About RPNcarsale</h3>
-                        <p>RPN Car-Sale strives to enhance the experience of the collector-car enthusiast by publishing high-quality products while serving our readers and advertisers with excellence.</p>
-                        <br><p>We do this by creating a work environment that empowers, challenges and rewards employees who share this commitment.</p>
-                    </div>
+                        <h3>About US</h3>
+                        <p>As RPN car sale we Import and sell almost evry brand of cars and we hope to provide best service to our customers.</p>
+                        </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="footer-widget link-widget">
                         <h3>Useful Links</h3>
                         <ul>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Support & Help</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Affiliate Program</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Knowledge Base</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Contact</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> How It Works</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Advertise Policy</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Terms Of Service</a></li>
-                            <li><a href="{{ route('contact.index') }}"> <i class="fa fa-angle-double-right"></i> Support</a></li>
+                            <li><a href="#"> <i class="fa fa-angle-double-right"></i> Testrides</a></li>
+                            <li><a href="#"> <i class="fa fa-angle-double-right"></i> Inventory</a></li>
+                            <li><a href="#"> <i class="fa fa-angle-double-right"></i> Contact</a></li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="col-sm-4">
                     <div class="footer-widget contact-widget">
-                        <h3>Contact Us</h3>
+                        <h3>Get in Touch</h3>
                         <ul>
                              <li><span><i class="fa fa-envelope"></i> E-mail :</span> <a href="mailto:rpncarsale@gmail.com">rpncarsale@gmail.com</a></li>
                              <li>
@@ -52,7 +45,7 @@
 <script src="{{ asset('main/js/jquery.min.js') }}"></script>
 <script src="{{ asset('main/js/modernizr.min.js') }}"></script>
 <script src="{{ asset('main/js/bootstrap.min.js') }}"></script>
-{{-- <script src="https://maps.google.com/maps/api/js?sensor=true"></script> --}}
+<script src="https://maps.google.com/maps/api/js?sensor=true"></script> 
 <script src="{{ asset('main/js/gmaps.min.js') }}"></script>
 <script src="{{ asset('main/js/owl.carousel.min.js') }}"></script>
 <script src="{{ asset('main/js/custom.js') }}"></script>

@@ -13,7 +13,7 @@
                 <!-- general form elements -->
                 <div class="box box-primary">
                     <div class="box-header with-border">
-                        <h3 class="box-title">Car Advertisements Create</h3>
+                        <h3 class="box-title">Add Cars</h3>
                     </div>
                     @include('admin.includes.messages')
                     <!-- /.box-header -->
@@ -23,15 +23,15 @@
                         <div class="box-body">
                             <div class="col-lg-6"> 
                                 <div class="form-group">
-                                    <label for="title">Advertisement Title</label>
+                                    <label for="title">Car Name</label>
                                     <input type="text" class="form-control" name="title" id="title" placeholder="Enter Title">
                                 </div>    
                                 <div class="form-group">
-                                    <label for="title">Advertisement Subtitle</label>
+                                    <label for="title">Car Subtitle</label>
                                     <input type="text" class="form-control" name="subtitle" id="subtitle" placeholder="Enter Subitle">
                                 </div> 
                                 <div class="form-group">
-                                    <label for="title">Advertisement Slug</label>
+                                    <label for="title">Slug</label>
                                     <input type="text" class="form-control" name="slug" id="slug" placeholder="Enter Slug">
                                 </div> 
                             </div>
@@ -39,7 +39,7 @@
                                 <br>
                                 <div class="form-group">
                                     <div class="pull-right">
-                                        <label for="image ">File input</label>
+                                        <label for="image ">Input Image</label>
                                         <input type="file" name="image" id="image"> 
                                     </div>
                                     <div class="checkbox pull-left">
@@ -50,7 +50,7 @@
                                 </div>  
                                 <br>
                                 <div class="form-group" style="margin-top:18px;">
-                                    <label>Car Brand</label>
+                                    <label>Car Category</label>
                                     <select class="form-control select2 select2-hidden-accessible" multiple="" data-placeholder="Select a State" style="width: 100%;" tabindex="-1" aria-hidden="true" name="tags[]">
                                         @foreach($tags as $tag )
                                             <option value="{{ $tag->id}}">{{ $tag->name }}</option>
@@ -58,7 +58,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group" style="margin-top:18px;">
-                                    <label>Car Category</label>
+                                    <label>Car Brand</label>
                                     <select class="form-control select2 select2-hidden-accessible" multiple="" data-placeholder="Select a State" style="width: 100%;" tabindex="-1" aria-hidden="true" name="categories[]">
                                             @foreach($categories as $category )
                                             <option value="{{ $category->id}}">{{ $category->name }}</option>
@@ -74,7 +74,7 @@
                                 <div class="col-md-12">
                                     <div class="box">
                                         <div class="box-header">
-                                            <h3 class="box-title">Advertisement Content</h3>
+                                            <h3 class="box-title">Car details</h3>
                                             <div class="pull-right box-tools">
                                                 <button type="button" class="btn btn-info btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
                                             </div>
