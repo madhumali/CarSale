@@ -38,10 +38,12 @@ class PermissionController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'name' => 'required|max:50|unique:permissions'
+            'name' => 'required|max:50|unique:permissions',
+            'for' => 'required'
         ]);
         $permission = new permission;
         $permission->name = $request->name;
+        $permission->for = $request->for;
         $permission->save();
         return redirect(route('permission.index'));
     }
@@ -52,7 +54,7 @@ class PermissionController extends Controller
      * @param  \App\Model\Admin\permission  $permission
      * @return \Illuminate\Http\Response
      */
-    public function show(permission $permission)
+    public function show($id)
     {
         //
     }
@@ -63,7 +65,7 @@ class PermissionController extends Controller
      * @param  \App\Model\Admin\permission  $permission
      * @return \Illuminate\Http\Response
      */
-    public function edit(permission $permission)
+    public function edit($id)
     {
         $permission = permission::find($id);
         return view('admin.permission.edit',compact('permission'));
@@ -76,13 +78,15 @@ class PermissionController extends Controller
      * @param  \App\Model\Admin\permission  $permission
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, permission $permission)
+    public function update(Request $request,$id)
     {
         $this->validate($request,[
-            'name' => 'required|max:50'
+            'name' => 'required|max:50',
+            'for' => 'required'
         ]);
         $permission = permission::find($id);
         $permission->name = $request->name;
+        $permission->for = $request->for;
         $permission->save();
         return redirect(route('permission.index'));
     }
@@ -93,7 +97,7 @@ class PermissionController extends Controller
      * @param  \App\Model\Admin\permission  $permission
      * @return \Illuminate\Http\Response
      */
-    public function destroy(permission $permission)
+    public function destroy($id)
     {
         permission::where('id',$id)->delete();
         return redirect()->back();

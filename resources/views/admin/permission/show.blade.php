@@ -25,7 +25,7 @@
                 <tr>
                   <th>S.No</th>
                   <th>Permission Name</th>
-                  <th>Slug</th>
+                  <th>Permission For</th>
                   <th>Edit</th>
                   <th>Delete</th>
                 </tr>
@@ -60,7 +60,7 @@
                 <tr>
                   <th>S.No</th>
                   <th>Permission Name</th>
-                  <th>Slug</th>
+                  <th>Permission For</th>
                   <th>Edit</th>
                   <th>Delete</th>
                 </tr>
