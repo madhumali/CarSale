@@ -27,10 +27,10 @@
                              <li><span><i class="fa fa-envelope"></i> E-mail :</span> <a href="mailto:rpncarsale@gmail.com">rpncarsale@gmail.com</a></li>
                              <li>
                                  <ul class="list-inline social">
-                                    <li><a class="facebook" href="#"><i class="fa fa-facebook-square"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fa fa-twitter-square"></i></a></li>
-                                    <li><a class="google" href="#"><i class="fa fa-google-plus-square"></i></a></li>
-                                    <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a class="facebook" href="https://www.facebook.com/rpn.carsale.7"><i class="fa fa-facebook-square"></i></a></li>
+                                    <li><a class="twitter" href="https://twitter.com/RCarsale"><i class="fa fa-twitter-square"></i></a></li>
+                                    <li><a class="google" href="https://plus.google.com/u/0/101187452797170051103"><i class="fa fa-google-plus-square"></i></a></li>
+                                    <li><a class="instagram" href="https://www.instagram.com/rpncarsale/?hl=en"><i class="fa fa-instagram"></i></a></li>
                                     <li><a class="youtube" href="#"><i class="fa fa-youtube-play"></i></a></li>
                                 </ul>
                              </li>
