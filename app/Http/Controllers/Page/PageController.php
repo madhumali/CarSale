@@ -50,12 +50,13 @@ class PageController extends Controller
     }
 
     // edit here
-    public function search()
+    public function search(Request $request)
     {
         $category = categories::all();
         $tag = tags::all();
-        //$cars =;//search here
+        $cars = cars::search($request->keyword);
         return view('main.search',compact('cars','category','tag'));
+        // return $cars;
     }
     
 }
