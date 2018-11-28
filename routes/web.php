@@ -16,6 +16,7 @@ Route::group(['namespace' => 'Page'],function(){
     Route::get('cars/tags/{tags}','PageController@tag')->name('tags');
     Route::get('cars/categories/{categories}','PageController@category')->name('categories');
     Route::resource('/contact','ContactController');
+    Route::get('/search', 'PageController@search')->name('search');
     Route::get('/recent','PageController@recent')->name('recent');
 });
 
@@ -43,3 +44,4 @@ Route::group(['middleware' => ['auth']], function() {
 
 Route::get('testrides', 'TestrideController@index')->name('testrides.index');
 Route::post('testrides', 'TestrideController@addTestride')->name('testrides.add');
+
