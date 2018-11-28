@@ -10,8 +10,8 @@
     <!-- Default box -->
     <div class="box">
       <div class="box-header with-border">
-        <h3 class="box-title">Car Advertisements</h3>
-        <a class="col-md-offset-4 float-right btn btn-success" href="{{ route('cars.create') }}">Add New Advertisement</a>
+        <h3 class="box-title">Inventory</h3>
+        <a class="col-md-offset-4 float-right btn btn-success" href="{{ route('cars.create') }}">Inventory</a>
         <div class="box-tools pull-right">
           <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
           {{-- <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button> --}}
@@ -24,11 +24,11 @@
               <thead>
                 <tr>
                   <th>S.No</th>
-                  <th>Advertisement Title</th>
-                  <th>Advertisement Subtitle</th>
+                  <th>Car Name</th>
+                  <th>Car Subtitle</th>
                   <th>Slug</th>
                   <th>Body</th>
-                  <th>Created At</th>
+                  <th>Added At</th>
                   <th>Edit</th>
                   <th>Delete</th>
                 </tr>
@@ -65,11 +65,11 @@
               <tfoot>
                 <tr>
                     <th>S.No</th>
-                    <th>Advertisement Title</th>
-                    <th>Advertisement Subtitle</th>
+                    <th>Car</th>
+                    <th>Car Subtitle</th>
                     <th>Slug</th>
-                    <th>Body</th>
-                    <th>Created At</th>
+                    <th>Description</th>
+                    <th>Added At</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
