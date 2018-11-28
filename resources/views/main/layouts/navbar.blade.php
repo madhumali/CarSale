@@ -28,23 +28,15 @@
                                         <a href="{{ route('login') }}" class=" btn btn-primary" aria-hidden="true">{{ __('Login') }}</a>
                                     </li>
                                 @else
-                                    <li class="nav-item dropdown">
-                                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                            {{ Auth::user()->name }} <span class="caret"></span>
-                                        </a>
-                        
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="{{ route('logout') }}"
-                                                onclick="event.preventDefault();
-                                                              document.getElementById('logout-form').submit();">
-                                                {{ __('Logout') }}
-                                            </a>
-                        
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                                @csrf
-                                            </form>
-                                        </div>
-                                    </li>
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn btn-xs btn-success dropdown-toggle" type="button" data-toggle="dropdown">{{ Auth::user()->name }}
+                                        <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                        <li><a style="color:green;" href="/admin">Dashboard</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
                                 @endguest
                                 <li>
                                     <div class="search-container">
@@ -76,7 +68,7 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="/testrides" >Test Rides</a></li>
-                        <li><a href="">Inventory</a></li>
+                        <li><a href="#inventory">Inventory</a></li>
                         <li><a href="/contact">Contact Us</a></li>
                     </ul>
                 </div>
