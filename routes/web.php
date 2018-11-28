@@ -32,6 +32,7 @@ Route::group(['namespace' => 'Admin' ,'middleware' => ['admin']],function(){
     Route::resource('/admin/permission','PermissionController');
 });
 
+Route::resource('/admin/testrides','ShowtestridesComtroller');
 
 Auth::routes();
 

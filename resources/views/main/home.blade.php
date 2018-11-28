@@ -169,7 +169,7 @@
         </div>
     </div><!-- #call-to-act -->
 
-    <div class="section">
+    <div id="inventory" name="inventory" class="section">
         <div class="container">
             <div class="section-title">
                 <div class="title-content">

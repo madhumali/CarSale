@@ -216,13 +216,10 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         // Image class alises
         'Image' => Intervention\Image\Facades\Image::class,
-<<<<<<< HEAD
         //calender
         'Calendar' => MaddHatter\LaravelFullcalendar\Facades\Calendar::class,
-=======
         // Default user model
         'User' => 'App\User',
->>>>>>> 40def9b3fd662f6529ae6a6767b8f36b212579ae
 
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
