@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\Admin\role;
 use App\User;
 use Auth;
 // use App\Http\Controllers\Admin\Users;

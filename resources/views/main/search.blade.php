@@ -1,4 +1,3 @@
-
 @extends('main/app')
 @section('title','RPN-Advertisements')
 @section('content')

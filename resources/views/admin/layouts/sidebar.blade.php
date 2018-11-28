@@ -27,15 +27,15 @@
         <li class="treeview">
             <a href="#">
             <i class="fa fa-laptop"></i>
-            <span>Car Advertisements</span>
+            <span>Manage Inventory</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
             </span>
             </a>
             <ul class="treeview-menu">
                 <li><a href="{{ route('cars.index') }}"><i class="fa fa-circle-o"></i>Publish</a></li>
-                <li><a href="{{ route('category.index') }}"><i class="fa fa-circle-o"></i> Categories</a></li>
-                <li><a href="{{ route('tag.index') }}"><i class="fa fa-circle-o"></i>Brands</a></li>
+                <li><a href="{{ route('category.index') }}"><i class="fa fa-circle-o"></i> Brands</a></li>
+                <li><a href="{{ route('tag.index') }}"><i class="fa fa-circle-o"></i>Categories</a></li>
             </ul>
         </li>
         <li class="treeview">
@@ -49,6 +49,30 @@
             <ul class="treeview-menu">
                 <li><a href="{{ route('user.index') }}"><i class="fa fa-circle-o"></i>Users</a></li>
                 <li><a href="{{ route('user.create') }}"><i class="fa fa-circle-o"></i>Employee Register</a></li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a href="#">
+            <i class="fa fa-user"></i>
+            <span>Permission</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="{{ route('permission.index') }}"><i class="fa fa-circle-o"></i>Permission</a></li>
+            </ul>
+        </li>
+        <li class="treeview">
+            <a href="#">
+            <i class="fa fa-user"></i>
+            <span>Messages</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="{{ route('message.index') }}"><i class="fa fa-circle-o"></i>Show</a></li>
             </ul>
         </li>
     </section>

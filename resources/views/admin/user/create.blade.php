@@ -72,13 +72,20 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="role" class="col-md-4 col-form-label text-md-right">{{ __('Assign Role') }}</label>
+                                    <label for="role" class="col-md-4 col-form-label text-md-right">{{ __('Assign a Role') }}</label>
 
                                     <div class="col-md-6">
-                                        <select name="role" id="" class="form-control">
+                                        @foreach ($roles as $role)
+                                            <div class="col-md-3">
+                                                <div class="checkbox">
+                                                    <label><input name="[]" value="{{ $role->id }}" type="checkbox">{{ $role->name }}</label>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                        {{-- <select name="role" id="" class="form-control">
                                             <option value="0">Manager</option>
                                             <option value="1">Clerk</option>
-                                        </select>
+                                        </select> --}}
                                         {{-- <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required> --}}
                                     </div>
                                 </div>
