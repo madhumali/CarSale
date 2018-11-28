@@ -37,4 +37,5 @@ Route::group(['middleware' => ['auth']], function() {
 
 });
 
-
+//Search route
+Route::get('/search', 'Page\PageController@search')->name('search');
