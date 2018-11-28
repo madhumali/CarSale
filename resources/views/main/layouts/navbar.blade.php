@@ -84,7 +84,6 @@
                         <li><a href="/testrides" >Test Rides</a></li>
                         <li><a href="">Inventory</a></li>
                         <li><a href="/contact">Contact Us</a></li>
-                <a class="navbar-brand" href="/">RPN Car Sale</a>
             </div><!-- /navbar-header -->
         </div>
         <!-- container -->

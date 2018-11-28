@@ -164,7 +164,7 @@
             <div class="call-to-act">
                 <h1><span>Import Your Dream car</span> With RPN Car Sales</h1>
                 <p>Import Of Foreign Cars Become Easier Now: </p>
-                <a href="/conact" class="btn btn-primary">Contact Now</a>
+                <a href="/contact" class="btn btn-primary">Contact Now</a>
             </div>
         </div>
     </div><!-- #call-to-act -->
