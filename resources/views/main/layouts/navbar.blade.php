@@ -29,7 +29,6 @@
                                         <a href="{{ route('login') }}" class=" btn btn-primary" aria-hidden="true">{{ __('Login') }}</a>
                                     </li>
                                 @else
-<<<<<<< HEAD
                                 <li>
                                     <div class="dropdown">
                                         <button class="btn btn-xs btn-success dropdown-toggle" type="button" data-toggle="dropdown">{{ Auth::user()->name }}
@@ -37,23 +36,6 @@
                                         <ul class="dropdown-menu">
                                         <li><a style="color:green;" href="/admin">Dashboard</a></li>
                                         </ul>
-=======
-                                <li class="nav-item dropdown">
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false" v-pre>
-                                            {{ Auth::user()->name }} <span class="caret"></span>
-                                        </a>
-
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                              document.getElementById('logout-form').submit();">
-                                                {{ __('Logout') }}
-                                            </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            @csrf
-                                        </form>
->>>>>>> 2c5b0969ac77fd93ad7bfa09b05216a31c743fca
                                     </div>
                                 </li>
                                 @endguest
@@ -90,7 +72,7 @@
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li><a href="{{route('main')}}">Home</a></li>
-                        <li><a href="">New Arrivals</a></li>
+                        <li><a href="{{ route('recent') }}">New Arrivals</a></li>
                         <li><a href="/testrides" >Test Rides</a></li>
                         <li><a href="#inventory">Inventory</a></li>
                         <li><a href="/contact">Contact Us</a></li>
