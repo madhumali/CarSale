@@ -26,6 +26,15 @@
                                     <label for="name">Permission Name</label>
                                     <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
                                 </div>
+                                <div class="form-group">
+                                    <label for="for">Permission For</label>
+                                    <select name="for" id="for" class="form-control">
+                                        <option selected disable>Select Permission For</option>
+                                        <option value="user">User</option>
+                                        <option value="user">User</option>
+                                        <option value="user">User</option>
+                                    </select>
+                                </div>
                                 <div class="box-footer">
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                     <a href="{{ route('permission.index') }}" class="btn btn-warning">Back</a>

@@ -5,5 +5,5 @@
 @endif
 
 @if(session()->has('message'))
-    <p class="alert alert-success">{{ session('message') }}</p>
+    <h2 class="alert alert-success">{{ session('message') }}</h2>
 @endif
