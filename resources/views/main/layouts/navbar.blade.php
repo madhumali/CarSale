@@ -8,10 +8,10 @@
                             <li><span><i class="fa fa-envelope-o"></i></span> <a href="mailto:rpncarsale@gmail.com">rpncarsale@gmail.com</a></li>
                             <li>
                                 <ul class="list-inline top-social">
-                                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a class="facebook" href="https://www.facebook.com/rpn.carsale.7"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter" href="https://twitter.com/RCarsale"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a class="google" href="https://plus.google.com/u/0/101187452797170051103"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a class="instagram" href="https://www.instagram.com/rpncarsale/?hl=en"><i class="fa fa-instagram"></i></a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -33,9 +33,9 @@
                                     <div class="dropdown">
                                         <button class="btn btn-xs btn-success dropdown-toggle" type="button" data-toggle="dropdown">{{ Auth::user()->name }}
                                         <span class="caret"></span></button>
-                                        <ul class="dropdown-menu">
-                                        <li><a style="color:green;" href="/admin">Dashboard</a></li>
-                                        </ul>
+                                            <ul class="dropdown-menu">
+                                            <li><a style="color:green;" href="/admin">Dashboard</a></li>
+                                            </ul>
                                     </div>
                                 </li>
                                 @endguest
@@ -64,7 +64,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img class="img-responsive" src="images/logo.png" alt="RPN Car Sales"></a>
+                <div class="row">
+                    <div>
+                        <a class="navbar-brand" href="{{ route('main') }}"><img class="img-responsive" src="images/icon/rpnlogo.png"></a>
+                    </div>
+                    <div>
+                        <a href="{{ route('main') }}"><h4 style="color: red">RPN-Car-Sales</h4></a>
+                    </div>
+                </div>
             </div>
             <!-- /navbar-header -->
 
