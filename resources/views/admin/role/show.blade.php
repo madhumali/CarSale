@@ -25,7 +25,6 @@
                 <tr>
                   <th>S.No</th>
                   <th>Role Name</th>
-                  <th>Slug</th>
                   <th>Edit</th>
                   <th>Delete</th>
                 </tr>
@@ -34,7 +33,6 @@
                 @foreach($roles as $role)
                   <tr>
                       <td>{{$loop->index+1}}</td>
-                      <td>{{$role->name}}</td>
                       <td>{{$role->name}}</td>
                       <td><a href="{{ route('role.edit',$role->id) }}"><span class="glyphicon glyphicon-edit"></span></a></td>
                       <td>
@@ -60,7 +58,6 @@
                 <tr>
                   <th>S.No</th>
                   <th>Role Name</th>
-                  <th>Slug</th>
                   <th>Edit</th>
                   <th>Delete</th>
                 </tr>

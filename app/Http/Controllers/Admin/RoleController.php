@@ -46,6 +46,7 @@ class RoleController extends Controller
         $role = new role;
         $role->name = $request->name;
         $role->save();
+        $role->permission()->sync($request->permission);
         return redirect(route('role.index'));
     }
 
@@ -88,6 +89,7 @@ class RoleController extends Controller
         $role = role::find($id);
         $role->name = $request->name;
         $role->save();
+        $role->permission()->sync($request->permission);
         return redirect(route('role.index'));
     }
 

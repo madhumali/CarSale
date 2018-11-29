@@ -82,7 +82,7 @@
                             * The callback parameter executes the initMap() function
                             -->
                             <script async defer
-                            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+                            src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
                     </script>
                 </div>
                 <br>

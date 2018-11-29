@@ -28,9 +28,9 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <label for="name">User Permissions</label>
+                                        <label for="name">Permissions For Admin</label>
                                         @foreach($permissions as $permission)
-                                            @if($permission->for=='user')
+                                            @if($permission->for=='admin')
                                                 <div class="checkbox">
                                                     <label><input type="checkbox" name="permissions" value="{{ $permission->id }}">{{ $permission->name }}</label>
                                                 </div>
@@ -38,9 +38,9 @@
                                         @endforeach
                                     </div>
                                     <div class="col-lg-6">
-                                        <label for="name">Advertisement Permissions</label>
+                                        <label for="name">Permissions For Manager</label>
                                         @foreach($permissions as $permission)
-                                            @if($permission->for=='advertisement')
+                                            @if($permission->for=='manager')
                                                 <div class="checkbox">
                                                     <label><input type="checkbox" name="permissions" value="{{ $permission->id }}">{{ $permission->name }}</label>
                                                 </div>
@@ -48,9 +48,9 @@
                                         @endforeach
                                     </div>
                                     <div class="col-lg-6">
-                                        <label for="name">Other Permissions</label>
+                                        <label for="name">Permissions For Employee</label>
                                         @foreach($permissions as $permission)
-                                            @if($permission->for=='other')
+                                            @if($permission->for=='employee')
                                                 <div class="checkbox">
                                                     <label><input type="checkbox" name="permissions" value="{{ $permission->id }}">{{ $permission->name }}</label>
                                                 </div>

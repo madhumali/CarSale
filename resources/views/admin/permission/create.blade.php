@@ -30,9 +30,9 @@
                                     <label for="for">Permission For</label>
                                     <select name="for" id="for" class="form-control">
                                         <option selected disable>Select Permission For</option>
-                                        <option value="user">User</option>
-                                        <option value="user">User</option>
-                                        <option value="user">User</option>
+                                        <option value="admin">Admin</option>
+                                        <option value="manager">Manager</option>
+                                        <option value="employee">Employee</option>
                                     </select>
                                 </div>
                                 <div class="box-footer">
